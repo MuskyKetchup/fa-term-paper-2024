@@ -11,7 +11,7 @@ public class Server {
     private static final int SERVER_PORT = 12345;
     private static final String DB_URL = "jdbc:mysql://localhost:3307/chatdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "1234";
+    private static final String DB_PASSWORD = "12345678";
 
     // Соединение с базой данных
     private static Connection dbConnection;
@@ -44,7 +44,10 @@ public class Server {
         } finally {
             // Закрытие соединения с БД при остановке сервера
             if (dbConnection != null) {
-                try { dbConnection.close(); } catch (SQLException e) { /* ignore */ }
+                try {
+                    dbConnection.close();
+                } catch (SQLException e) {
+                    /* ignore */ }
             }
         }
     }
@@ -168,12 +171,16 @@ public class Server {
                     clients.remove(userName);
                     System.out.println("Пользователь " + userName + " отключился.");
                 }
-                try { socket.close(); } catch (IOException e) { /* ignore */ }
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    /* ignore */ }
             }
         }
 
         /**
          * Проверка учетных данных пользователя по базе данных.
+         * 
          * @return ID пользователя, если логин/пароль верны, или -1 при неудаче.
          */
         private int authenticateUser(String login, String pass) {
