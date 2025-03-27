@@ -76,7 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           file: 'chat-*.jar'
-          tags: true
+          tags: false
           draft: true
       - name: Upload the built report
         uses: xresloader/upload-to-github-release@v1
@@ -84,7 +84,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           file: 'java-rep.pdf'
-          tags: true
+          tags: false
           draft: true
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
