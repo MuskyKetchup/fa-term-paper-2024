@@ -29,17 +29,22 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Archive Build Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: application
+        path: target/chat-*.jar
+  render:
+    runs-on: ghcr.io/quarto-dev/quarto:1.7.19
+
+    steps:
+    - uses: actions/checkout@v4
     - name: Render with Quarto
       uses: quarto-dev/quarto-actions/render@v2
       env:
         TYPST_FONT_PATHS: ./
       with:
         path: doc/report/
-    - name: Archive Build Artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: application
-        path: target/chat-*.jar
     - name: Archive Report Artifact
       uses: actions/upload-artifact@master
       with:
@@ -47,6 +52,7 @@ jobs:
         path: ../../doc/report/java-rep.pdf
   publish:
     runs-on: ubuntu-latest
+    needs: build render
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
