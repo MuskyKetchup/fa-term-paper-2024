@@ -71,18 +71,21 @@ jobs:
         with:
           name: report
       - name: Upload the built app 
-        uses: skx/github-action-publish-binaries@master
+        uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: 'chat-*.jar'
-          releaseId: ${{ needs.create_release.outputs.id }}
+          file: 'chat-*.jar'
+          tags: true
+          draft: true
       - name: Upload the built report
-        uses: skx/github-action-publish-binaries@master
+        uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: 'java-rep.pdf'
+          file: 'java-rep.pdf'
+          tags: true
+          draft: true
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
  #   - name: Update dependency graph
