@@ -29,6 +29,45 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Render with Quarto
+      uses: quarto-dev/quarto-actions/render@v2
+      env:
+        TYPST_FONT_PATHS=./
+      with:
+        path: doc/report/
+    - name: Archive Build Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: application
+        path: target/chat-*.jar
+    - name: Archive Report Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: ../../doc/report/java-rep.pdf
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Download Application Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: application
+      - name: Download Application Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: application
+      - name: Download Application Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: report
+      - name: Upload the built app and report
+        uses: skx/github-action-publish-binaries@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: '{chat-*,java-rep.pdf}'
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
  #   - name: Update dependency graph
