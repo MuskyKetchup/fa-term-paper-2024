@@ -32,7 +32,7 @@ jobs:
     - name: Render with Quarto
       uses: quarto-dev/quarto-actions/render@v2
       env:
-        TYPST_FONT_PATHS=./
+        TYPST_FONT_PATHS: ./
       with:
         path: doc/report/
     - name: Archive Build Artifact
