@@ -2,3 +2,4 @@ bin
 maven/target
 maven/client/target
 maven/server/target
+target
