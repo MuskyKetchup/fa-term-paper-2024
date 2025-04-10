@@ -78,6 +78,13 @@
            font: font,
            size: fontsize)
   set heading(numbering: sectionnumbering)
+  // show heading: set block(above: 1.75em, below: 1.75em)
+  show heading: it => {
+  set block(above: 3em,below: 3em)
+  it
+  v(2em, weak: true)
+}
+
 set table(
   inset: 6pt,
   stroke: none
