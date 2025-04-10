@@ -91,6 +91,18 @@ $endif$
 $if(toc-indent)$
   toc_indent: $toc-indent$,
 $endif$
+$if(paragraph.indent)$
+  paragpraphindent: $paragraph.indent$,
+$endif$
+$if(page.numbering.start)$
+  pagenumstart: $page.numbering.start$,
+$endif$
+$if(page.numbering.align)$
+  pagenumalign: $page.numbering.align$,
+$endif$
+$if(page.numbering.type)$
+  pagenumbering: "$page.numbering.type$",
+$endif$
   toc_depth: $toc-depth$,
   cols: $if(columns)$$columns$$else$1$endif$,
   doc,

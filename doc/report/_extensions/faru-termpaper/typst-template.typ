@@ -58,14 +58,21 @@
   toc_depth: none,
   toc_indent: 1.5em,
   purpose: "Нейросетевая система прогнозирования электроэнергии",
+  paragpraphindent: 5em,
+  pagenumbering: "1",
+  pagenumalign: right,
+  pagenumstart: 3,
   doc,
 ) = {
   set page(
     paper: paper,
     margin: margin,
-    numbering: "1",
+    footer: align(center)[
+      *Москва 2024*
+    ],
   )
-  set par(justify: true)
+  set par(justify: true, 
+    first-line-indent: (amount: paragpraphindent, all: true))
   set text(lang: lang,
            region: region,
            font: font,
@@ -79,16 +86,7 @@ set table(
   purpose = title
  } 
 
-set page(
-  paper: "a4",
-  header: align(center)[
-  ],
-  footer: align(center)[
-    *Москва 2024*
-  ],
-  numbering: "1",
-)
-set par(justify: true)
+set list(marker: [--] )
 // set text(
 //   font: "Libertinus Serif",
 //   size: 15pt,
@@ -151,6 +149,12 @@ pagebreak()
   //   )
   // }
 
+  set page(
+   footer: auto,
+   numbering: pagenumbering,
+   number-align: pagenumalign,
+  )
+  counter(page).update(pagenumstart)
   if date != none {
     align(center)[#block(inset: 1em)[
       #date
@@ -177,6 +181,7 @@ pagebreak()
     );
     ]
   }
+pagebreak()
 
   if cols == 1 {
     doc
