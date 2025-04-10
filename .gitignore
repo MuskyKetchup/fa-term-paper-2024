@@ -4,3 +4,4 @@ maven/client/target
 maven/server/target
 target
 .m2
+doc/report/java-rep.pdf
