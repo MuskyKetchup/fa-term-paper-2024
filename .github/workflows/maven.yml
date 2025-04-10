@@ -76,6 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: 'chat-*.jar'
+          releaseId: ${{ needs.create_release.outputs.id }}
       - name: Upload the built report
         uses: skx/github-action-publish-binaries@master
         env:
