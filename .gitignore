@@ -5,3 +5,4 @@ maven/server/target
 target
 .m2
 doc/report/java-rep.pdf
+doc/report/_extensions/faru-termpaper/typst-template.pdf
