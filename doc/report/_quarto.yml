@@ -1,0 +1,8 @@
+---
+mainfont: Times New Roman
+brand:
+  typography:
+    headings:
+      family: Times New Roman
+format:
+  faru-termpaper-typst: default
