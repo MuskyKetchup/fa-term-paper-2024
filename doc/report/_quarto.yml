@@ -5,21 +5,21 @@ brand:
     headings:
       family: Times New Roman
 format:
-   faru-termpaper-typst: default
+  faru-termpaper-typst: default
 margin:
-   left: "25mm"
-   right: "10mm"
-   top: "20mm"
-   bottom: "20mm"
-   x: ""
-   y: ""
-fontsize: "14"
-papersize: "a4"
+  left: 25mm
+  right: 10mm
+  top: 20mm
+  bottom: 20mm
+  x: auto
+  y: auto
+fontsize: 14pt
+papersize: a4
 paragraph:
-   indent: "5em"
+  indent: 2.5em
+section-numbering: 1.1.1
 page:
-   numbering:
-      place: bottom
-      align: right
-      start: 3
-      skip: false
+  numbering:
+    type: '1'
+    align: bottom + right
+    start: 3
