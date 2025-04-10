@@ -922,11 +922,23 @@ height="2.059828302712161in" #fig-image13}
 
 ## **Исходных код разработанного программного обеспечения**
 
-Ввиду большого обьема кодовой базы, для ознакомления с ней необходимо перейти
+Ввиду большого обьема кодовой базы, для полного ознакомления с ней необходимо перейти
 по следующей ссылке на публичную систему контроля версий `github.com`
 [https://github.com/MuskyKetchup/fa-term-paper-2024](https://github.com/MuskyKetchup/fa-term-paper-2024)
 Оригинальный проект описываемый в данном документе, находится в ветке old-eclipse ,
 ветка main содержит переделанный под maven проект.
+
+Далее приведены отдельные файлы для возможности ознакомления
+
+### CryptoUtil
+
+```{.java include="../../src/main/java/com/example/chat/CryptoUtil.java" code-line-numbers="true"}
+```
+
+### ClientMain
+
+```{.java include="../../src/main/java/com/example/chat/ClientMain.java"}
+```
 
 # **Список литературы**
 

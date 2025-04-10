@@ -6,6 +6,7 @@ brand:
       family: Times New Roman
 format:
   faru-termpaper-typst: default
+filters: [include-code-files]
 margin:
   left: 25mm
   right: 10mm
