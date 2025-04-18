@@ -946,17 +946,17 @@ height="2.059828302712161in" #fig-image13}
 1)  Oracle Documentation. The Java™ Tutorials. \[Электронный ресурс\].
     Доступно на:
     [[https://docs.oracle.com/javase/tutorial/]{.underline}](https://docs.oracle.com/javase/tutorial/)
-    (Официальная документация по языку Java, включая работу с сетью,
-    многопоточность и основы GUI на Swing).
+    (дата обращения: 25.10.2024). --- Официальная документация по языку Java, включая работу с сетью,
+    многопоточность и основы GUI на Swing.
 
 2)  Oracle Documentation. Java™ Platform, Standard Edition.
     \[Электронный ресурс\]. Доступно на:
     [[https://docs.oracle.com/javase/]{.underline}](https://docs.oracle.com/javase/)
-    (Подробные спецификации платформы Java SE).
+    (дата обращения: 4.11.2024). --- Подробные спецификации платформы Java SE.
 
 3)  MySQL Reference Manual. MySQL 8.0 Reference Manual. \[Электронный
     ресурс\]. Доступно на:
-    [[https://dev.mysql.com/doc/refman/8.0/en/]{.underline}](https://dev.mysql.com/doc/refman/8.0/en/)
+    [[https://dev.mysql.com/doc/refman/8.0/en/]{.underline}](https://dev.mysql.com/doc/refman/8.0/en/)(дата обращения: 12.11.2024). ---
     (Официальное руководство по MySQL, включающее разделы по
     администрированию, проектированию БД и написанию SQL-запросов).
 
