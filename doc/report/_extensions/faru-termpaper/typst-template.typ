@@ -201,7 +201,10 @@ v(1fr,weak: true)
     );
     ]
   }
-pagebreak()
+  show heading.where(depth: 1): body => {    
+    colbreak(weak:true)
+    body
+  }
 
   if cols == 1 {
     doc
