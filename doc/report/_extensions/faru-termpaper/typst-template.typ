@@ -97,6 +97,8 @@ show heading: it => {
   v(2em, weak: true)
 }
 
+  //
+set figure.caption(separator: [ --- ])
 set table(
   inset: 6pt,
   stroke: none
