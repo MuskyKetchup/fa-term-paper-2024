@@ -134,7 +134,7 @@ align(horizon)[
 ]
 ]
 ]
-v(20%,weak: true)
+v(3fr,weak: true)
 align(horizon)[
 #grid(
   columns: (1fr, 1fr),
@@ -161,7 +161,7 @@ align(horizon)[
   ]
 )
 ]
-pagebreak()
+v(1fr,weak: true)
 
   // if authors != none {
   //   let count = authors.len()
