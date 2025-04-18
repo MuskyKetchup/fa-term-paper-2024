@@ -1,7 +1,8 @@
 ---
 title: Реализация алгоритма транспортного шифрования трафика программы чата для информационной системы
 format:
-  faru-termpaper-typst: default
+  faru-termpaper-typst:
+    keep-typ: true
 lang: ru
 authors:
   - name: Шутов А.А.
