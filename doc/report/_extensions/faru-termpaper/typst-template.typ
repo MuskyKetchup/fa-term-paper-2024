@@ -74,6 +74,12 @@
   )
   set text(hyphenate: false)
   show heading.where(level: 1): set align(center)
+  show heading.where(body: [Введение]): set heading(numbering:none)
+  show heading.where(body: [Приложения]): set heading(numbering:none)
+  show heading.where(body: [Список литературы]): set heading(numbering:none)
+  show heading.where(body: [Исходных код разработанного программного обеспечения]): set heading(numbering:none)
+  show heading.where(body: [CryptoUtil]): set heading(numbering: none, outlined:false)
+  show heading.where(body: [ClientMain]): set heading(numbering: none, outlined:false)
   set par(justify: true,
     spacing: 0.5em,
     first-line-indent: (amount: paragpraphindent, all: true))
