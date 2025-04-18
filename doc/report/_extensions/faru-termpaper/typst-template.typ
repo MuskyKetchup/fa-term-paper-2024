@@ -73,6 +73,7 @@
     ],
   )
   set text(hyphenate: false)
+  show heading.where(level: 1): set align(center)
   set par(justify: true,
     spacing: 0.5em,
     first-line-indent: (amount: paragpraphindent, all: true))
