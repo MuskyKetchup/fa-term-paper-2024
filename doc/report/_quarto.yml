@@ -19,6 +19,7 @@ papersize: a4
 paragraph:
   indent: 2.5em
 section-numbering: 1.1.1
+toc-indent: 0em
 page:
   numbering:
     type: '1'
