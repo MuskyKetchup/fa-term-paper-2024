@@ -113,11 +113,7 @@ set table(
   purpose = title
  } 
 
-set list(marker: [--] )
-// set text(
-//   font: "Libertinus Serif",
-//   size: 15pt,
-// )
+set list(marker: [--], indent: paragpraphindent )
 align(horizon)[
 #align(center)[
   #block(width: 90%)[
