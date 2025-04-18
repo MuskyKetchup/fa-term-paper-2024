@@ -114,6 +114,13 @@ set table(
  } 
 
 set list(marker: [--], indent: paragpraphindent )
+show list: it => {
+  set list(indent: 0pt)
+  it
+}
+//show list: it => [ #it #v(-par.spacing) #{ "" } ]
+
+
 align(horizon)[
 #align(center)[
   #block(width: 90%)[
