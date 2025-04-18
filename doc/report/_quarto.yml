@@ -23,5 +23,5 @@ toc-indent: 0em
 page:
   numbering:
     type: '1'
-    align: bottom + right
+    align: bottom + center
     start: 3
