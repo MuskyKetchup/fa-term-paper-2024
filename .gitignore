@@ -7,3 +7,4 @@ target
 doc/report/java-rep.pdf
 doc/report/_extensions/faru-termpaper/typst-template.pdf
 doc/report/.cache/deno
+.cache/deno
