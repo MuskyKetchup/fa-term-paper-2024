@@ -205,6 +205,7 @@ v(1fr,weak: true)
     colbreak(weak:true)
     body
   }
+  show heading.where(depth: 3).or(heading.where(depth: 2)) : it => pad(left: paragpraphindent,it)
 
   if cols == 1 {
     doc
