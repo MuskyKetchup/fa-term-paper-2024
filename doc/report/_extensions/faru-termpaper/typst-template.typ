@@ -1,4 +1,3 @@
-
 // This is an example typst template (based on the default template that ships
 // with Quarto). It defines a typst function named 'article' which provides
 // various customization options. This function is called from the 
@@ -47,8 +46,8 @@
   region: "RU",
   font: "New Computer Modern",
   fontsize: 14pt,
-  title-size: 1.5em,
-  subtitle-size: 1.25em,
+  title-size: 1em,
+  subtitle-size: 1em,
   heading-family: "New Computer Modern",
   heading-weight: "bold",
   heading-style: "normal",
