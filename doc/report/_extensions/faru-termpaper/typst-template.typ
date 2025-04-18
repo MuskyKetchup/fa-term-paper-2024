@@ -72,7 +72,9 @@
       *Москва 2024*
     ],
   )
-  set par(justify: true, 
+  set text(hyphenate: false)
+  set par(justify: true,
+    spacing: 0.5em,
     first-line-indent: (amount: paragpraphindent, all: true))
   set text(lang: lang,
            region: region,
