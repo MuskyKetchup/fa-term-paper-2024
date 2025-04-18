@@ -185,24 +185,14 @@ v(1fr,weak: true)
    number-align: pagenumalign,
   )
   counter(page).update(pagenumstart)
-  if date != none {
-    align(center)[#block(inset: 1em)[
-      #date
-    ]]
-  }
-
-  if abstract != none {
-    block(inset: 2em)[
-    #text(weight: "semibold")[#abstract-title] #h(1em) #abstract
-    ]
-  }
 
   if toc {
     let title = if toc_title == none {
       auto
     } else {
       toc_title
-    }
+      }
+    
     block(above: 0em, below: 2em)[
     #outline(
       title: toc_title,
