@@ -99,6 +99,12 @@ show heading: it => {
 
   //
 set figure.caption(separator: [ --- ])
+show figure: it => {
+    linebreak()
+    it
+    linebreak()
+  }
+
 set table(
   inset: 6pt,
   stroke: none
